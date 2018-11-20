@@ -6,12 +6,31 @@ const sortByOptions = {
     'Best Match' : 'best_match',
     'Highest Rated' : 'rating',
     'Most Reviewed' : 'most_viewed',
+};
+    //TODO 6: Check warning
+    getSortByClass(sortByOptions) {
+        if (this.state == sortByOptions) {
+            return 'active'
+        } else {
+            ''
+        }
+    };
+
+    //TODO:7 update state by calling setState()
+    handleSortByChange(sortByOptions) {
 
 };
 
 //make search bar react component
 class SearchBar extends React.Component {
-
+    constructor(props) {
+        super(props)
+        this.state = {
+            term: '',
+            location: '',
+            sortBy: 'best_match',
+        };
+    }
     /*Dynamically create the list items needed to display the sort options (Best Match, Highest Rated, Most Reviewed).
     This is to help future proof against potential changes to the Yelp API.*/
     renderSortByOptions() {

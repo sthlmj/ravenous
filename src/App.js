@@ -6,7 +6,7 @@ import SearchBar from './components/SearchBar/SearchBar';
 
 //make js object
 const business = {
-    imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
+    imageSrc: './pizza.jpg',
     name: 'MarginOtto Pizzeria',
     address: '1010 Paddington Way',
     city: 'Flavortown',
