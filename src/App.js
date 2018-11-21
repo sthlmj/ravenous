@@ -6,7 +6,7 @@ import SearchBar from './components/SearchBar/SearchBar';
 
 //make js object
 const business = {
-    imageSrc: './pizza.jpg',
+    imageSrc: '../pizza.jpg',
     name: 'MarginOtto Pizzeria',
     address: '1010 Paddington Way',
     city: 'Flavortown',
@@ -27,12 +27,17 @@ const businesses = [
 ];
 
 class App extends React.Component {
+
+    searchYelp(term, location, sortBy) {
+        console.log(`Searching Yelp with ${term}, ${location}, ${sortBy}`);
+    }
+
     render() {
         return (
             <div className="App">
                 <h1>ravenous</h1>
-                <SearchBar />
-                <BusinessList businesses={businesses}/>
+                <SearchBar searchYelp={this.searchYelp} />
+                <BusinessList businesses={businesses} />
             </div>
         );
     }
