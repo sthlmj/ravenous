@@ -1,6 +1,6 @@
 //communication with yelp API
 
-const apiKey = 'MY-API-KEY';
+const apiKey = 'MY-YELP-API-KEY';
 
 //yelp object to store functionality needed to interact with Yelp
 const Yelp = {
