@@ -1,8 +1,16 @@
+Ravenous is a yelp.com clone, focused on front-end technologies like reactJS, javascript (ES6), html, css, jsx. It's integrated with yelp API for search requests and response.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+![Ravenous](https://github.com/sthlmj/ravenous/blob/master/public/ravenous.png)
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+This command installs a package, and any packages that it depends on. <br>
 
 ### `npm start`
 
